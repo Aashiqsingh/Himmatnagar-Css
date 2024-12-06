@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        height: 300px;
+        width: 300px;
+        border: 1px solid black;
+        background-image: url('https://sundayguardianlive.com/wp-content/uploads/2024/05/Modi.jpg');
+        background-size: cover;
+    }
+    .box::before{
+        content: '';
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        /* background-color: rgba(255, 68, 0, 0.685); */
+        background-image: url('https://etimg.etb2bimg.com/photo/115038329.cms');
+        background-size: cover;
+        opacity: 0.6;
+        transition: 1s;
+        right: 972px;
+    }
+    .box:hover::before{
+        width: 0;
+        /* height: 0; */
+        transition: 1s;
+    }
+</style>
+<body>
+    <!-- after or before : 2 extra layer -->
+
+    <div class="box"></div>
+</body>
+</html>
