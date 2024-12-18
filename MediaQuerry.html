@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        height: auto;
+        width: 95%;
+        background-color: gray;
+        border: 10px solid black;
+        margin: auto;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .image{
+        width: 30%;
+    }
+    .image img{
+        height: auto;
+        width: 100%;
+    }
+    .para{
+        width: 65%;
+        text-align: justify;
+        font-size: 18px;
+        color: red;
+    }
+
+
+    /* media querry */
+    @media (max-width: 400px){
+        .main{
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            border: 10px dotted darkblue;
+        }
+        .image{
+            width: 90%;
+        }
+        .image img{
+            border-radius: 50%;
+            box-shadow: 3px 3px 10px yellow;
+        }
+        .para{
+            color: white;
+            width: 90%;
+        }
+    }
+
+    @media (min-width: 900px){
+        .main{
+            background-color: teal;
+            border: 5px solid brown;
+        }
+        .para{
+            color: yellow;
+            font-size: 16px;
+        }
+    }
+
+    @media (min-width: 401px) and (max-width: 900px){
+        .main{
+            background-color: skyblue;
+        }
+        .image{
+            width: 45%;
+        }
+        .image img{
+            border: 2px dashed darkblue;
+            border-radius: 50px;
+        }
+        .para{
+            width: 50%;
+        }
+    }
+
+
+</style>
+<body>
+    
+    <!-- media querry : page responsive -->
+
+    <div class="main">
+        <div class="image">
+            <img src="https://aniportalimages.s3.amazonaws.com/media/details/HGFHJUGJU.jpg" alt="">
+        </div>
+        <div class="para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sapiente natus temporibus aspernatur, facere dignissimos! Voluptas quidem ullam maiores magnam? Exercitationem delectus voluptatibus reiciendis quo eaque asperiores velit autem ipsum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, deleniti sequi. Harum qui laborum facere necessitatibus dolor, quisquam assumenda, adipisci ut minus amet, error mollitia est iste esse dolorem ab. Placeat iusto ipsam maiores labore unde quia, maxime ad porro deserunt mollitia consequuntur iure voluptates in aspernatur doloremque ea fugit sit modi libero nesciunt pariatur minima? Obcaecati, ipsum. Aliquam perspiciatis quibusdam rem corrupti eum in qui recusandae culpa ea accusamus dolorum doloribus beatae perferendis, libero nam nulla sed maiores voluptates, quis obcaecati, odio aliquid! Illo ab in aliquid, quia ratione dolorem laboriosam optio, obcaecati accusantium iste expedita ipsa repellat incidunt! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti iste numquam, eius, hic sunt architecto neque excepturi maxime, aliquam ratione dignissimos esse! Vero dolor voluptatem perspiciatis temporibus numquam quo non unde alias ab incidunt et deserunt esse officia fugit saepe dolore, eius consectetur velit sapiente praesentium ipsam quae possimus veniam! Distinctio, nostrum ea! 
+
+            </p>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>
