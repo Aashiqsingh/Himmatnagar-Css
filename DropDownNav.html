@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .nav{
+        height: 100px;
+        width: 100%;
+        background-color: teal;
+    }
+    li{
+        float: left;
+        list-style: none;
+        width: 140px;
+        /* border-right: 1px solid black; */
+        text-align: center;
+        line-height: 100px;
+        position: relative;
+    }
+    li a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: arial;
+        display: block;
+    }
+    li a:hover{
+        background-color: orangered;
+        color: black;
+        font-family: cursive;
+        text-shadow: 1px 1px 1px yellow;
+    }
+    .nav ul ul{
+        position: absolute;
+        background-color: teal;
+        display: none;
+    }
+    .nav ul li:hover > ul{
+        display: block;
+    }
+    .nav ul ul ul{
+        position: absolute;
+        /* left: 100%; */
+        left: 140px;
+        top: 0;
+    }
+</style>
+<body>
+    
+    <div class="nav">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Services</a>
+                                <ul>
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">About</a></li>
+                                    <li><a href="">Services</a></li>
+                                    <li><a href="">Contact</a></li>
+                                    <li><a href="">Blog</a></li>
+                                    <li><a href="">News</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">News</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">News</a></li>
+                </ul>
+            </li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Blog</a>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact</a>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">News</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">News</a></li>
+                </ul>
+            </li>
+            <li><a href="">News</a></li>
+        </ul>
+    </div>
+</body>
+</html>
